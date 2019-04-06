@@ -52,7 +52,7 @@ void loop()
   Serial.println();
   Serial.print("");
   content.toUpperCase();
-  if (content.substring(1) == "B4 0E 80 C3") 
+  if (content.substring(1) == "B4 0E 80 C3") //Replace by your UID
   {
     delay(10000);
   Serial.begin(9600);
@@ -66,7 +66,7 @@ void loop()
   gsm.println((char)26);
   delay(1000);
   }
-   if (content.substring(1) == "24 93 51 43") 
+   if (content.substring(1) == "24 93 51 43") //Replace by your UID
   {
     delay(10000);
   Serial.begin(9600);
